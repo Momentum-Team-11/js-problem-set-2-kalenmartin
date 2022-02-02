@@ -3,14 +3,21 @@
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
 
-function remove (them) {
-    let students = ['Cadence', 'Ordel', 'Marion'];
-    students.pop()
-    console.log('after pop: ', students)
-}
-
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
+
+function remove(array, memberInArray) {
+    //let students = ['Cadence', 'Ordel', 'Marion']
+    let keepArray = []
+    for (let index = 0; index < array.length; index++) {
+        if (array[index] !== memberInArray) {
+            // add it to the new array
+            keepArray.push(array[index])
+        }
+    }
+    return keepArray
+}
+
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
@@ -18,37 +25,30 @@ function remove (them) {
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
-function sum(numbers){
-    let base = 0
-    let newNumbers = ['1', '2', '3', '4', '5'];
-    for (let number of 5 ){
-        base += 5
+function sum(number){
+    let sum = 0
+    for (let single of number){
+        sum = sum + single
     }
-    return base 
+    return sum 
 }
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
-function average(joe){
-    let hans = ['1','2','3','4','5'];
-    let avg = averageArray(hans);
-    let averageArray = hans.length;
-
+function average(number){
+    let average = 0
+    for (let single of number) {
+        return average = sum(number) / number.length
+    }
 }
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
-function minimun (wage) {
-    let array = [4, 8, 2, 4, 67];
-    let max = wage[67], min = wage[2];
-    for (let i = 2; i < array.length; i++){
-        if (array [i] < min) min = array [i];
+function minimun (minNumber) {
+
     }
-    console.log(wage)
-    return wage
-}
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
