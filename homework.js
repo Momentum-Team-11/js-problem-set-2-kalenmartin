@@ -33,27 +33,29 @@ function sum(numbers){
 function average(joe){
     let hans = ['1','2','3','4','5'];
     let avg = averageArray(hans);
-    let numCount = hans.length;
+    let averageArray = hans.length;
 
 }
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
-function minimun {
-    let amount = [4, 8, 2, 4, 67];
-    let max = array[0], min = array[0];
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] > max) { max = array[i]; 
-        if (array [i] < min) { min = array [i]; }
+function minimun (wage) {
+    let array = [4, 8, 2, 4, 67];
+    let max = wage[67], min = wage[2];
+    for (let i = 2; i < array.length; i++){
+        if (array [i] < min) min = array [i];
+    }
+    console.log(wage)
+    return wage
 }
-    console.log("max = " + max);
-    console.log("min = " + min)
-}
+
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
-//
+
+/* a loop? */
+
 // A "selection sort" is one of the most simple sorting algorithms. To implement it,
 // you start with an unsorted array of numbers. You search the array and find the
 // smallest number in the array. You then insert that into a new array as the first
@@ -74,24 +76,23 @@ function minimun {
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
-var input = [8,3,2,4,7,5,0,1,6,9];
+var input = [8,3,2,7,5,0,1,9];
 console.log(input);
 
 function SelectionSort(input){
-  for(var i=0; i<input.length;i++){
-  var temp= input[i];
+    for(var i=0; i<input.length;i++){
+    var IDK= input[i];
     for(var j=i+1;j<input.length;j++){
-      if(temp>input[j]){
-        temp = input[j];
-      }
+        if(IDK>input[j]){
+        IDK = input[j];
+        }
     }
-    var index = input.indexOf(temp);
+    var index = input.indexOf(IDK);
     var tempVal = input[i];
-    input[i] = temp;  
-    input[index] = tempVal;
-  }
+    input[i] = IDK;  
+    input[index] = IDKVal;
+    }
 }
-SelectionSort(input);
 console.log(input);
 
 // 7. Create a function called `textList` that takes an array and joins its elements
