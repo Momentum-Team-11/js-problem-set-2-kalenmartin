@@ -48,17 +48,14 @@ function average(number){
 
 function minimun (number) {
     let minimum = 0
-    for (let single of number) {
-        minimum = Math.min(...minmum)
-        return minimum
-    }
+    for (let minimum of number) {
+    const min = Math.min(...number);
+    return minimum
 }
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
-
-/* a loop? */
 
 // A "selection sort" is one of the most simple sorting algorithms. To implement it,
 // you start with an unsorted array of numbers. You search the array and find the
@@ -79,6 +76,22 @@ function minimun (number) {
 // Note 2: Selection sort can be implemented using one array. Read the explanation at
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
+
+function selectionSort(array) {
+    var arrayCopy = array.slice(0);
+    for (let index = 0; index < arrayCopy.length - 1; index++) {
+
+
+    let minIndex = index;
+    for (let j = index + 1; j < arrayCopy.length; j++) {
+        if (arrayCopy[j] < arrayCopy[minIndex]) {
+            minIndex = j;
+        }
+    }
+    [array[i], arrayCopy[minIndex]] = [arrayCopy[minIndex]], array [i];
+    }
+    return array;
+    }
 
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
