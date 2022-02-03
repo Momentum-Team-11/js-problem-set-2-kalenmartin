@@ -25,9 +25,9 @@ function remove(array, memberInArray) {
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
-function sum(number){
+function sum(October){
     let sum = 0
-    for (let single of number){
+    for (let single of October){
         sum = sum + single
     }
     return sum 
@@ -46,9 +46,13 @@ function average(number){
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
-function minimun (minNumber) {
-
+function minimun (number) {
+    let minimum = 0
+    for (let single of number) {
+        minimum = Math.min(...minmum)
+        return minimum
     }
+}
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
@@ -76,27 +80,9 @@ function minimun (minNumber) {
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
-var input = [8,3,2,7,5,0,1,9];
-console.log(input);
-
-function SelectionSort(input){
-    for(var i=0; i<input.length;i++){
-    var IDK= input[i];
-    for(var j=i+1;j<input.length;j++){
-        if(IDK>input[j]){
-        IDK = input[j];
-        }
-    }
-    var index = input.indexOf(IDK);
-    var tempVal = input[i];
-    input[i] = IDK;  
-    input[index] = IDKVal;
-    }
-}
-console.log(input);
-
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
-//
+
+
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
