@@ -21,36 +21,45 @@ function remove(array, memberInArray) {
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
+function remove (students, name) {
+    let newArray = []
+    for (let student of students){
+        if (student != name) {
+            newArray.push(student)
+        }
+    }
+    return newArray
+}
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
-function sum(October){
-    let sum = 0
-    for (let single of October){
-        sum = sum + single
+function sum(Octobers) {
+    let total = 0
+    for (let October of Octobers) {
+        total += October
     }
-    return sum 
+    return total 
 }
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
 function average(number){
-    let average = 0
-    for (let single of number) {
-        return average = sum(number) / number.length
+    if (number.length > 0) {
+        return sum(number) / number.length
     }
 }
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
-function minimun (number) {
-    let minimum = 0
-    for (let minimum of number) {
-    const min = Math.min(...number);
-    return minimum
+function minimun(numbers) {
+    if (numbers.length > 0) {
+        return numbers.reduce((min,currentNum) =>
+        currentNum < min ? currentNum : min
+        )
+    }
 }
 
 // 6. There are many techniques to sort arrays in programming. Your programming
